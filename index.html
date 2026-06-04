@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pai's Spices</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Pai's Spices Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#" class="btn">Shop Now</a>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Spice Up Your Cooking!</h1>
+      <p>Explore our range of authentic Thai spices & blends.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="premium.jpg" alt="Premium Spices" />
+      <h3>Premium Spices</h3>
+      <p>Top-quality spices sourced from around the world.</p>
+    </div>
+    <div class="feature">
+      <img src="authentic.jpg" alt="Authentic Flavors" />
+      <h3>Authentic Flavors</h3>
+      <p>Bring the taste of Thailand to your kitchen.</p>
+    </div>
+    <div class="feature">
+      <img src="recipes.jpg" alt="Easy Recipes" />
+      <h3>Easy Recipes</h3>
+      <p>Simple and delicious recipes for any cook.</p>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="red-curry.jpg" alt="Thai Red Curry Powder" />
+        <h4>Thai Red Curry Powder</h4>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <div class="product-card">
+        <img src="lemongrass.jpg" alt="Lemongrass Spice Blend" />
+        <h4>Lemongrass Spice Blend</h4>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <div class="product-card">
+        <img src="tom-yum.jpg" alt="Tom Yum Spice Mix" />
+        <h4>Tom Yum Spice Mix</h4>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <div class="product-card">
+        <img src="green-curry.jpg" alt="Green Curry Paste" />
+        <h4>Green Curry Paste</h4>
+        <a href="#" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+    <section class="contact">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+  <form class="contact-form" action="https://formspree.io/f/mvznojjp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Pai's Spices. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
